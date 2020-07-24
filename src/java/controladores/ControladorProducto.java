@@ -38,12 +38,46 @@ public class ControladorProducto extends HttpServlet {
         switch(accion){
             case "1": registrar(request,response);
                  break;
+                 case "2": modificar(request,response);
+                 break;
            
         }
          }else{
              response.sendRedirect("agregarProducto.jsp?msj=Acceso Denegado");
          }
     }
+    
+    private void modificar(HttpServletRequest request, HttpServletResponse response) throws IOException{
+         try{
+            long codigo =Long.parseLong(request.getParameter("codigo").trim());
+            String nombre = request.getParameter("nombre").trim();
+            String descripcion = request.getParameter("descripcion").trim();
+            int precio = Integer.parseInt(request.getParameter("precio").trim());
+            String email = request.getParameter("email").trim();
+            int estado = Integer.parseInt( request.getParameter("estado").trim());
+            if(codigo<1||nombre.equals("")||descripcion.equals("")||precio<1||
+                    email.equals("")||estado<1){
+                response.sendRedirect("solicitarProducto.jsp?msj=valores erroneos");
+            }else{
+                EstadoDAO ed = new EstadoDAO();
+                Producto nuevoProducto = new Producto (codigo,nombre,descripcion,precio,email,ed.obtenerEstado(estado));
+                ProductoDAO pd = new ProductoDAO();
+                if(pd.obtenerProducto(nuevoProducto.getCodigo())==null){
+                    response.sendRedirect("solicitarProducto.jsp?msj=Codigo de producto inexistente");
+                }else{
+                   int respuesta = pd.modificar(nuevoProducto);
+                   if(respuesta>0){
+                       response.sendRedirect("solicitarProducto.jsp?msj=Estado de Reparacion modificada");
+                   }else{
+                       response.sendRedirect("solicitarProducto.jsp?msj=El estado no se pudo modificar");
+                   }
+                }
+            }
+         }catch(Exception e){
+             
+         }
+    }
+    
     
     private void registrar(HttpServletRequest request, HttpServletResponse response) throws IOException{
            try{
