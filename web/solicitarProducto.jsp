@@ -9,13 +9,13 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-        <link href="css/estilos.css" rel="stylesheet" type="text/css"/>
+        
         <title>Solicita Producto</title>
     </head>
-    <body background="img/flores2.jpg">
+    <body>
         <br>
         <form action="index.jsp">
-        <div class="login col-lg-2">
+        
         <input class="btn btn-danger btn-block" type="submit" name="accion" value="Volver a Inicio">
         </div>
     </form>

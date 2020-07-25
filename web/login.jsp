@@ -10,14 +10,14 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-        <link href="css/estilos.css" rel="stylesheet" type="text/css"/>
+        
         <title>Acceso Admin</title>
     </head>
-    <body background="img/flores2.jpg">
+    <body >
         <br>
         <form action="index.jsp">
         <div class="login col-lg-2">
-        <input class="btn btn-danger btn-block" type="submit" name="accion" value="Volver a Inicio">
+        <input  type="submit" name="accion" value="Volver a Inicio">
         </div>
     </form>
         <br>
@@ -29,13 +29,13 @@
                 </div>
             <div class="form-group">
                     <label>Admin:</label>
-                    <input class="form-control" type="text" name="id" placeholder="Ingrese el Usuario">
+                    <input  type="text" name="id" placeholder="Ingrese el Usuario">
                 </div>
             <div class="form-group">
                     <label>Contraseña:</label>
-                    <input type="password" name="password" placeholder="Ingrese la Contraseña" class="form-control">
+                    <input type="password" name="password" placeholder="Ingrese la Contraseña" >
                 </div>
-            <input class="btn btn-danger btn-block" type="submit" value="Ingresar">
+            <input  type="submit" value="Ingresar">
             <input type="hidden" name="accion" value="1"/>
             <br>
             <center>

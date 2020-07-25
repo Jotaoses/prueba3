@@ -11,35 +11,34 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
         <link href="css/estilos.css" rel="stylesheet" type="text/css"/>
-        <title>Floreria Admin</title>
+        <title>Floreria Administrador</title>
     </head>
-    <body background="img/flores.jpg">
+    <body >
         <br>
         <form action="Salir">
-        <div class="login col-lg-2">
-        <input class="btn btn-danger btn-block" type="submit" name="accion" value="Cerrar Sesion">
+        <input type="submit" name="accion" value="Cerrar Sesion">
         </div>
     </form>
         <br>
   
-            <div class="container col-lg-3">
+            
         <form action="agregarProducto.jsp">
-             <div class="form-group text-center">
+             <div class="form-group ">
                     <p><strong>PANEL DE ADMINISTRACION</strong></p>
                 </div>
             <form action="">
             <div class="form-group">
-                    <input class="btn btn-danger btn-block" type="submit" value="AGREGAR PRODUCTOS">
+                    <input  type="submit" value="AGREGAR PRODUCTOS">
                 </div>
             </form>
             <br>
             <form action="gestionPedidos.jsp">
             <div class="form-group">
-                    <input class="btn btn-danger btn-block" type="submit" value="GESTIONAR PRODUCTOS">
+                    <input  type="submit" value="GESTIONAR PRODUCTOS">
                 </div>
             </form>
         </form>
-            </div>
+            
         <br>
         
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

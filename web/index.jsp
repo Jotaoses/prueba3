@@ -18,15 +18,15 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-        <link href="css/estilos.css" rel="stylesheet" type="text/css"/>
+        
         <title>Floreria Web</title>
     </head>
-    <body background="img/flores3.jpg">
+    <body background="img/portada3.jpg">
         <br>
         <form action="login.jsp">
-        <div class="login col-lg-2">
-        <input class="btn btn-danger btn-block" type="submit" name="accion" value="Iniciar Sesion">
-        </div>
+        
+        <input  type="submit" name="accion" value="Iniciar Sesion">
+     
     </form>
         <br>
     <center>
@@ -50,9 +50,9 @@
             %>
             <center>
                 <form action="">
-            <div class="container col-lg-7">
-                <div class="form-group text-center">
-                    <p><strong>SOLICITE SU PRODUCTO AHORA YA!</strong></p>
+            
+                <div class="form-group ">
+                    <p><strong>Solicitar Pedido</strong></p>
                 </div>
                 <table border="1" style="border-collapse: collapse;">
                     <tr>

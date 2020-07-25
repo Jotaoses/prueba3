@@ -16,18 +16,17 @@
         <link href="css/estilos.css" rel="stylesheet" type="text/css"/>
         <title>Ingreso Producto</title>
     </head>
-    <body background="img/flores2.jpg">
+    <body >
         <br>
         <form action="floreria.jsp">
-        <div class="login col-lg-2">
-        <input class="btn btn-danger btn-block" type="submit" name="accion" value="Volver a Inicio">
+        <input  type="submit" name="accion" value="Volver a Inicio">
         </div>
     </form>
         <br>
   
-            <div class="container col-lg-3">
+            <div class="container ">
         <form action="ControladorProducto" method="post">
-             <div class="form-group text-center">
+             <div class="form-group ">
                     <p><strong>PANEL DE REGISTRO DE PRODUCTOS</strong></p>
                 </div>
             <div class="form-group">
@@ -60,7 +59,7 @@
                             <% } %>
                         </select>
             </div>
-            <input class="btn btn-danger btn-block" type="submit" value="Registrar">
+            <input  type="submit" value="Registrar">
             <input type="hidden" name="accion" value="1"/>
             <br>
             <center>
